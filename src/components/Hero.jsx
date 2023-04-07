@@ -6,10 +6,10 @@ import emailjs from "@emailjs/browser";
 const Hero = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
-
+  const [loading, setLoading] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
         "service_kb3ilon",
@@ -21,10 +21,12 @@ const Hero = () => {
         (result) => {
           console.log(result.text);
           setSuccess(true);
+          setLoading(false);
         },
         (error) => {
           console.log(error.text);
           setSuccess(false);
+          setLoading(false);
         }
       );
   };
@@ -116,7 +118,7 @@ const Hero = () => {
             type='submit'
             className='bg-[#9F32B2] py-3 px-8  rounded-xl outline-none w-fit text-white font-bold'
           >
-           Bilgileri Gönder
+           {loading ? "Gönderiliyor" : "Bilgileri Gönder"}
           </button>
           <label className="text-black"> {success &&
               "Talebiniz Alınmıştır en kısa sürede size geri döneceğiz."}</label>
