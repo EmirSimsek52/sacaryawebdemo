@@ -21,7 +21,7 @@ const Araclar = () =>  (
           </h1>     
           </div>
           <div>
-            <ul className="flex sm:flex-row flex-col m-10">
+            <ul className="flex sm:flex-row flex-col ">
               <li> <Egea/></li>
               <li> <Mercedes/></li>
               <li> <Clio/></li>
@@ -29,7 +29,7 @@ const Araclar = () =>  (
             </ul> 
             </div>
             <div>
-            <ul className="flex sm:flex-row flex-col m-10">
+            <ul className="flex sm:flex-row flex-col ">
               <li> <Cerato/></li>
               <li> <Megane/></li>
               <li> <Duster/></li>
