@@ -87,7 +87,7 @@ const Hero = () => {
               name='message'
               
               placeholder="Marka veya Model"
-              className='bg-tertiary py-2 px-6 sm:w-[210px] w-[225px] placeholder:text-[#808080] text-black rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-2 px-6 sm:w-[210px] w-[225px] placeholder:text-[white] text-black rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
@@ -97,7 +97,7 @@ const Hero = () => {
               name='message'
              
               placeholder="Mail"
-              className='bg-tertiary py-2 px-6 w-[225px] placeholder:text-[#808080] text-black rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-2 px-6 w-[225px] placeholder:text-[white] text-black rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
