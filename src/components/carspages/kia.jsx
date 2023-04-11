@@ -49,7 +49,7 @@ function Cerato() {
                     <div className='flex flex-row'>
                     <RiTeamFill className='text-[#9F32B2] mr-3' size={25}/>{car.kisi} Kişilik
                     </div>
-                    <div className='flex flex-row ml-[80px]'>
+                    <div className='flex flex-row sm:ml-[62px] ml-[66px]'>
                     <RiCarFill className='text-[#9F32B2] mr-3' size={25}/>{car.model}
                     </div>
                     </div>
