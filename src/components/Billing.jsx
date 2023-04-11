@@ -11,7 +11,7 @@ const Billing = () => (
             <h1 className="flex-1 ml-6 mb-10 font-poppins font-400 ss:text-[52px] text-[32px] text-[#32324e]">
            İletişim
           </h1>   
-          <ul className="flex sm:flex-row flex-col m-10">
+          <ul className="flex sm:flex-row flex-col items-center">
             <li>
               <Googlecard/>
             </li>

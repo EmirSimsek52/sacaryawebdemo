@@ -113,14 +113,16 @@ const Hero = () => {
             />
           </label>
        </div>
-          <div className="flex flex-row">
+          <div className="flex flex-col">
           <button
             type='submit'
-            className='bg-[#9F32B2] py-3 px-8  rounded-xl outline-none w-fit text-white font-bold'
+           /* className='bg-[#9F32B2] py-2 sm:px-8 px-1 rounded-xl outline-none w-fit text-white font-bold'*/
+           className="bg-[#9F32B2] text-[white] py-3  rounded-[20px] sm:px-3 px-2 w-fit"
           >
            {loading ? "Gönderiliyor" : "Bilgileri Gönder"}
           </button>
-          <label className="text-black"> {success &&
+          <p/>
+          <label className="text-black mt-5"> {success &&
               "Talebiniz Alınmıştır en kısa sürede size geri döneceğiz."}</label>
           </div>
         </form>
