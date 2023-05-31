@@ -1,6 +1,6 @@
 import styles from "../style";
 import React, { useRef, useState } from "react";
-import { discount, robot,car } from "../assets";
+import { car } from "../assets";
 
 import emailjs from "@emailjs/browser";
 const Hero = () => {
@@ -129,13 +129,9 @@ const Hero = () => {
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-        <img src={car} alt="billing" className="w-[100%] h-[80%]  relative z-[5]" />
+        <img src={car} alt="billing" className="w-[100%]  sm:h-[70%] h-[40%] sm:ml-24 ml-0  relative z-[5]" />
 
-        {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        {/* gradient end */}
+     
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

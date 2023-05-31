@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { VscMenu,VscClose } from "react-icons/vsc";
-import { close, logo, menu,icon2 } from "../assets";
+import { icon2 } from "../assets";
 import { navLinks } from "../constants";
 import { RiPhoneFill } from "react-icons/ri";
 const Navbar = () => {

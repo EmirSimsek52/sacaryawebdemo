@@ -1,6 +1,6 @@
 import styles from "../style";
-import { logo,icon2 } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import { icon2 } from "../assets";
+
 import {SiFacebook,SiInstagram,SiGoogle,SiWhatsapp} from 'react-icons/si';
 
 const Footer = () => (
@@ -27,17 +27,17 @@ const Footer = () => (
 
       <div className="flex flex-row md:mt-0 mt-6">
       <ul className="flex flex- row-auto text-[#9F32B2] sm:gap-10 gap-4">
-              <li >
+              <li className="hover:opacity-50 duration-300" >
               <a  href="https://www.instagram.com/sacaryarental/"><SiInstagram size={30}/></a>
               </li>
-              <li>
+              <li  className="hover:opacity-50 duration-300">
               <a href="https://g.co/kgs/zEfRVJ">
                 <SiGoogle size={30}/></a>
               </li>
-              <li>
+              <li  className="hover:opacity-50 duration-300">
               <a href="https://www.facebook.com/sacarya.rental/?locale=tr_TR"><SiFacebook size={30}/> </a>
               </li>
-              <li>
+              <li  className="hover:opacity-50 duration-300">
                 <a href="https://api.whatsapp.com/message/K6OXRA4YXBBOO1?autoload=1&app_absent=0"><SiWhatsapp size={30}/></a>
               </li>
             </ul>

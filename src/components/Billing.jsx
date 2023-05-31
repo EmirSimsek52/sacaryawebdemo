@@ -1,4 +1,4 @@
-import { apple, bill, google } from "../assets";
+
 import styles, { layout } from "../style";
 import Googlecard from "./iletisim/googlecard";
 import Wpcard from "./iletisim/wpcard";

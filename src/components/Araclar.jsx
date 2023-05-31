@@ -1,6 +1,6 @@
-import { features } from "../constants";
+
 import styles, { layout } from "../style";
-import Button from "./Button";
+
 import Egea from "./carspages/egea";
 import Mercedes from "./carspages/mercedes";
 import Clio from "./carspages/clio";
@@ -21,7 +21,7 @@ const Araclar = () =>  (
           </h1>     
           </div>
           <div>
-            <ul className="flex sm:flex-row flex-col ">
+            <ul className="flex  sm:flex-row flex-col ">
               <li> <Egea/></li>
               <li> <Mercedes/></li>
               <li> <Clio/></li>
