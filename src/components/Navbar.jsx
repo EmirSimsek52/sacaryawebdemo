@@ -3,6 +3,7 @@ import { VscMenu,VscClose } from "react-icons/vsc";
 import { icon2 } from "../assets";
 import { navLinks } from "../constants";
 import { RiPhoneFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [active, setActive] = useState("AnaSayfa");
   const [toggle, setToggle] = useState(false);
@@ -19,12 +20,12 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-bold cursor-pointer text-[16px] ${
+            className={`font-poppins font-bold cursor-pointer text-[16px] hover:opacity-50 duration-300 ${
               active === nav.title ? "text-[#9F32B2]" : "text-[#4f5d78]"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <Link to={`/${nav.id}`}>{nav.title}</Link>
           </li>
         ))}
       </ul>
@@ -54,7 +55,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a  href={`#${nav.id}`}>{nav.title}</a>
+                <Link  to={`/${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
           </ul>

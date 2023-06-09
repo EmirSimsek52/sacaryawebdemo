@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { car } from "../assets";
 
 import emailjs from "@emailjs/browser";
+import Stats from "./Stats";
 const Hero = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
@@ -37,8 +38,8 @@ const Hero = () => {
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-20 px-6`}>
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-400 ss:text-[72px] text-[52px] text-[#32324e] ss:leading-[80.8px] leading-[55px]">
-            SACARYA İLE <br className="sm:block hidden" />{" "}
-            <span className="text-[#9F32B2]">GÜVENLİ</span>{" "}
+            <span className="text-gradient">SACARYA</span>  <br className="sm:block hidden" />{" "}
+           İLE GÜVENLİ{" "}
           </h1>
         </div>
         <h1 className="font-poppins font-400 ss:text-[68px] text-[52px] text-[#32324e] ss:leading-[80.8px] leading-[45px] w-full">
@@ -117,7 +118,7 @@ const Hero = () => {
           <button
             type='submit'
            /* className='bg-[#9F32B2] py-2 sm:px-8 px-1 rounded-xl outline-none w-fit text-white font-bold'*/
-           className="bg-[#9F32B2] text-[white] py-3  rounded-[20px] sm:px-3 px-2 w-fit"
+           className="bg-color1 text-[white] py-3  rounded-[20px] sm:px-3 px-2 w-fit"
           >
            {loading ? "Gönderiliyor" : "Bilgileri Gönder"}
           </button>
@@ -126,6 +127,7 @@ const Hero = () => {
               "Talebiniz Alınmıştır en kısa sürede size geri döneceğiz."}</label>
           </div>
         </form>
+       
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
@@ -133,10 +135,11 @@ const Hero = () => {
 
      
       </div>
-
+              
       <div className={`ss:hidden ${styles.flexCenter}`}>
         
       </div>
+      
     </section>
   );
 };

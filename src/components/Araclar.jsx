@@ -9,9 +9,12 @@ import Cerato from "./carspages/kia";
 import Megane from "./carspages/megane";
 import Duster from "./carspages/duster";
 import Elysee from "./carspages/elysee";
+import { motion } from 'framer-motion';
+import { animateX } from '../utils/motion';
 const Araclar = () =>  (
-  <section id="Araclar" className={layout.section}>
-<div className="flex justify-center items-center">
+  <section id="Araclar"  className={`${styles.paddingX} ${styles.flexCenter}`}>
+  <motion.div animate={animateX()} className={`${styles.boxWidth}`}>
+
         <section>
           <div>
   
@@ -20,25 +23,24 @@ const Araclar = () =>  (
            Araçlar
           </h1>     
           </div>
+          <div className="">
           <div>
-            <ul className="flex  sm:flex-row flex-col ">
+            <ul className="flex  flex-wrap gap-7 ">
               <li> <Egea/></li>
               <li> <Mercedes/></li>
               <li> <Clio/></li>
               <li> <Passat/></li>
-            </ul> 
-            </div>
-            <div>
-            <ul className="flex sm:flex-row flex-col ">
               <li> <Cerato/></li>
               <li> <Megane/></li>
               <li> <Duster/></li>
               <li> <Elysee/></li>
             </ul> 
             </div>
+    
+            </div>
           </div>
         </section>  
-    </div>
+    </motion.div>
   </section>
 );
 

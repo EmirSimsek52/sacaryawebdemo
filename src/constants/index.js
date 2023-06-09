@@ -2,7 +2,7 @@ import {  } from "../assets";
 
 export const navLinks = [
   {
-    id: "AnaSayfa",
+    id: "",
     title: "Ana Sayfa",
   },
   {
@@ -10,9 +10,15 @@ export const navLinks = [
     title: "Araçlar",
   },
   {
+    title:"Hakkımızda",
+    id:"hakkimizda",
+
+  },
+  {
     id: "iletisim",
     title: "İletişim",
   },
+
 
 ];
 
