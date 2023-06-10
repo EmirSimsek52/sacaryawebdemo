@@ -4,6 +4,7 @@ import Information from "./components/Information";
 import { BrowserRouter as Router, Routes, Route,Navigate  } from "react-router-dom";
 import MainPage from "./components/MainPage";
 import NavbarPro from "./components/NavbarPro";
+import Sozlesme from "./components/Sozlesme";
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
 
@@ -14,6 +15,7 @@ const App = () => (
            <Route path="/Araclar" element={<Araclar/>} />
            <Route path="iletisim" element={<Billing/>} />
            <Route path="hakkimizda" element={<Information/>} />
+           <Route path="Sozlesme" element={<Sozlesme/>} />
         </Routes>
     </Router>
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>

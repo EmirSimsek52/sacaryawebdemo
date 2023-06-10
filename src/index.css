@@ -7,7 +7,9 @@ body{
   background-color: #edf1f7;
 }
 
-
+.lisozlesme li{
+      margin-bottom: 10px;
+}
 :root {
   --black-gradient: linear-gradient(
     144.39deg,

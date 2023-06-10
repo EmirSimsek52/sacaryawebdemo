@@ -18,7 +18,10 @@ export const navLinks = [
     id: "iletisim",
     title: "İletişim",
   },
-
+  {
+    id: "Sozlesme",
+    title:"Sözleşme"
+  }
 
 ];
 

@@ -16,6 +16,7 @@ const Stats = () => (
 <AboutCard  icon={<SiStrapi size={40} />} heading='HEMEN İLETİŞİME GEÇELİM'  />
 
 </div>
+
   </section>
 );
 

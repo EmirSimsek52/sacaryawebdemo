@@ -13,19 +13,17 @@ import { motion } from 'framer-motion';
 import { animateX } from '../utils/motion';
 const Araclar = () =>  (
   <section id="Araclar"  className={`${styles.paddingX} ${styles.flexCenter}`}>
-  <motion.div animate={animateX()} className={`${styles.boxWidth}`}>
+  <motion.div animate={animateX()} >
 
         <section>
           <div>
   
             <div>
-            <h1 className="flex-1 ml-6 mb-10 font-poppins font-400 ss:text-[52px] text-[32px] text-[#32324e]">
-           Araçlar
-          </h1>     
+           
           </div>
           <div className="">
-          <div>
-            <ul className="flex  flex-wrap gap-7 ">
+          <div >
+            <ul className="flex  flex-wrap gap-7 justify-center ">
               <li> <Egea/></li>
               <li> <Mercedes/></li>
               <li> <Clio/></li>
